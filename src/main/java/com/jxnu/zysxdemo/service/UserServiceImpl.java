@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService {
 //        User user=loginMapper.findUser(loginRequest.getUsername(),loginRequest.getPassword());
         User user=loginMapper.findUser(loginRequest.getUsername(),loginRequest.getPassword());
         if(user!=null){
-            return new LoginResponse(true,user.getUser_id(),user.getAge(),user.getAge(),user.getHeight(),user.getWeight());
+            return new LoginResponse(true,user.getUser_id(),user.getAvatar(),user.getAge(),user.getHeight(),user.getWeight());
         }else {
             return new LoginResponse(false,null,null,null,null,null);
         }

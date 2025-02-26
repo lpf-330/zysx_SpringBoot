@@ -1,18 +1,16 @@
 package com.jxnu.zysxdemo.dto;
 
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
 public class LoginResponse {
     private boolean success;
     private Long user_id;
     private String avatar;
-    private int age;
-    private double height;
-    private double weight;
+    private Integer age;
+    private Double height;
+    private Double weight;
 
     public LoginResponse(boolean b, Object o, Object o1, Object o2, Object o3, Object o4) {
         this.success = b;
@@ -47,27 +45,27 @@ public class LoginResponse {
         this.avatar = avatar;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
-    public double getHeight() {
+    public Double getHeight() {
         return height;
     }
 
-    public void setHeight(double height) {
+    public void setHeight(Double height) {
         this.height = height;
     }
 
-    public double getWeight() {
+    public Double getWeight() {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(Double weight) {
         this.weight = weight;
     }
 }

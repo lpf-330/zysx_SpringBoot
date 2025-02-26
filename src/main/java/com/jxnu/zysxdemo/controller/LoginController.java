@@ -11,10 +11,11 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 @Slf4j
 @RestController
-@RequestMapping("/login")
+@RequestMapping("/api/login")
 public class LoginController {
     @Autowired
     private UserService userService;
+
 
     @PostMapping
     public LoginResponse postLogin(@RequestBody LoginRequest loginRequest){
